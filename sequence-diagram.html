@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+        body{
+            background-color: #cfb2b2;
+        }
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.img-container {
+            margin-top: 3vh;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		
+		.img-container img {
+
+			max-width: 100%;
+			height: 90vh;
+
+			display: block;
+			margin: 0 auto;
+		}
+		
+		.text-container {
+            font-size: 1.6rem;
+			text-align: center;
+            font-weight: bold;
+		}
+		
+		.list {
+			
+            margin-left: 5rem;
+            font-size: 1.5rem;
+			line-height: 1.5;
+            color: #333;
+		}
+        .text-container ol li {
+			margin: 0 0 20px 0;
+            color: #333;
+			line-height: 1.5;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="img-container">
+			<img src="./images/sequence-diagram.PNG" alt="practical image">
+		</div>
+		<div >
+			<p class="text-container">Steps displayed in the diagram -</p>
+            <ol class="list">
+                <li>Patient requests treatment with mediclaim details
+                </li>
+                <li>
+                    The Hospital then send an authorisation details to the Insurance Company
+                </li>
+                <li>
+                    These details will be then verified and validated by the admin
+                </li>
+                <li>
+                    The admin then sends a claim verification reply
+                </li>
+                <li>
+                    Based on reply there will be 2 possibilities
+                    <ul>
+                        <li>The mediclaim would be approved and patient provided with
+                            necessary medication and treatment.</li>
+                        <li>The mediclaim is denied and the Hospital informs denial to the
+                            patient.</li>
+                    </ul>
+                </li>
+            </ol>
+			
+                
+		</div>
+	</div>
+</body>
+</html>
